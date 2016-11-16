@@ -338,6 +338,7 @@ if __name__ == '__main__':
                                    [[1, 0, 0], [1, 3, 0], [1, 1, 1]]])
         test = BezierSurface(control_points)
         test.plot(n=(50, 50))
+
     comp_curve_demo()
     surface_demo()
     curve_demo()
