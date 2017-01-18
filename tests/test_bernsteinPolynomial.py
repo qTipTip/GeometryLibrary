@@ -2,9 +2,11 @@ from unittest import TestCase
 
 from src.BasisFunctions import BernsteinPolynomial
 
-
 class TestBernsteinPolynomial(TestCase):
     def test__call__zero_degree(self):
+        """
+        Check that degree zero bernstein is constant 1
+        """
         bernstein = BernsteinPolynomial(i=0, degree=0)
 
         self.assertAlmostEquals(bernstein(0), 1, places=8, msg='zeroth degree polynomial is not correct')
@@ -18,6 +20,9 @@ class TestBernsteinPolynomial(TestCase):
         self.assertAlmostEquals(bernstein_two(0.5), 0.5, places=8, msg='first degree polynomials are not correct')
 
     def test_partition_of_unity(self):
+        """
+        Verifies that the Bernstein polynomials partition unity.
+        """
         d = 3
         total = 0
         for i in range(d + 1):

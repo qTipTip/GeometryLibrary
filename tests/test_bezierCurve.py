@@ -23,7 +23,6 @@ class TestBezierCurve(TestCase):
 
 
     def test___call__endpoint_property(self):
-
         curve = BezierCurve(control_points=self.control_points)
         start_point = list(self.control_points[0])
         end_point = list(self.control_points[2])

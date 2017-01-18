@@ -22,7 +22,6 @@ class TestBezierSurface(TestCase):
         self.assertEquals(expected_dimension, dimension)
 
     def test__set_basis_functions(self):
-
         surface = BezierSurface(control_points=self.control_points)
         for i, b in enumerate(surface.basis[0]):
             self.assertEquals(i, b.i)
@@ -30,7 +29,6 @@ class TestBezierSurface(TestCase):
             self.assertEquals(j, b.i)
 
     def test___call__(self):
-
         surface = BezierSurface(control_points=self.control_points)
         expected = np.array([2, 2, 1])
         computed = surface(0.5, 0.5)
