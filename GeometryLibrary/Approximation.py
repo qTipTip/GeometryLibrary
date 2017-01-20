@@ -1,9 +1,9 @@
-from src.BasisFunctions import BernsteinPolynomial
+from .BasisFunctions import BernsteinPolynomial
 
 import numpy as np
 import matplotlib.pyplot as plt
 
-from src.Bezier import BezierCurve
+from .Bezier import BezierCurve
 
 
 class LeastSquaresApproximation(object):
@@ -77,6 +77,4 @@ if __name__ == '__main__':
         for n in [1, 3, 5, 6, 8]:
             test = LeastSquaresApproximation(x_values=x_values, z_values=z_values, n=n)
             test.plot()
-
-
     lq_demo()

@@ -37,7 +37,6 @@ class TestBezierSurface(TestCase):
         self.assertTrue(np.allclose(expected, computed), msg='%s != %s' % (expected, computed))
 
     def test_endpoint_property(self):
-
         test = BezierSurface(self.control_points)
         m, n = test.d
         x, y, z = test.evaluate()

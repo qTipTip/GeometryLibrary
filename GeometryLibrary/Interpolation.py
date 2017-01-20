@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from src.Bezier import CompositeBezierCurve, BezierCurve
+from .Bezier import CompositeBezierCurve, BezierCurve
 
 
 class HermiteInterpolant(CompositeBezierCurve):

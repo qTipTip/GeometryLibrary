@@ -1,7 +1,7 @@
-from unittest import TestCase
+import numpy as np
 
 from src.Bezier import BezierCurve
-import numpy as np
+from unittest import TestCase
 
 class TestBezierCurve(TestCase):
     control_points = np.array([(1, 2, 3), (3, 4, 5), (5, 6, 7)], dtype=float)
